@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- ===== Primary SEO ===== -->
+<title>Hasibbay | Binary &amp; Forex Trader, Web Developer, Student</title>
+<meta name="description" content="Hasibbay is a Binary &amp; Forex Trader, Web Developer and Student from Dhaka, Bangladesh — building trading strategies, automation bots and modern web experiences.">
+<meta name="keywords" content="Hasibbay, Hasibul, Forex Trader, Binary Trader, Web Developer, Trading Bot Developer, Bangladesh Trader, Frontend Developer, Trading Consultant, Automation Developer">
+<meta name="author" content="Hasibbay">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0f172a">
+<link rel="canonical" href="https://hasibbay.dev/">
+
+<!-- ===== Open Graph ===== -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hasibbay.dev/">
+<meta property="og:title" content="Hasibbay | Binary &amp; Forex Trader, Web Developer, Student">
+<meta property="og:description" content="Binary &amp; Forex Trader | Web Developer | Student — building trading strategies, automation bots and premium web experiences from Dhaka, Bangladesh.">
+<meta property="og:image" content="https://cdn.phototourl.com/free/2026-07-20-19814cc3-5f38-45bb-8df4-5736ed679b4d.jpg">
+<meta property="og:site_name" content="Hasibbay Portfolio">
+<meta property="og:locale" content="en_US">
+
+<!-- ===== Twitter Cards ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://hasibbay.dev/">
+<meta name="twitter:title" content="Hasibbay | Binary &amp; Forex Trader, Web Developer, Student">
+<meta name="twitter:description" content="Binary &amp; Forex Trader | Web Developer | Student — building trading strategies, automation bots and premium web experiences from Dhaka, Bangladesh.">
+<meta name="twitter:image" content="https://cdn.phototourl.com/free/2026-07-20-19814cc3-5f38-45bb-8df4-5736ed679b4d.jpg">
+
+<!-- ===== Icons / Manifest ===== -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+<link rel="alternate icon" href="assets/favicon/favicon.ico">
+<link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+
+<!-- ===== Fonts ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<!-- ===== Styles ===== -->
+<link rel="stylesheet" href="style.css">
+
+<!-- ===== JSON-LD Person Schema ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hasibbay",
+  "alternateName": "Hasibul",
+  "url": "https://hasibbay.dev/",
+  "image": "https://cdn.phototourl.com/free/2026-07-20-19814cc3-5f38-45bb-8df4-5736ed679b4d.jpg",
+  "jobTitle": ["Forex Trader", "Binary Trader", "Web Developer", "Student"],
+  "email": "mailto:hasibbay0.2@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dhaka",
+    "addressCountry": "Bangladesh"
+  },
+  "sameAs": [
+    "https://github.com/Hasibul100",
+    "https://bd.linkedin.com/in/hasibbay",
+    "https://t.me/hasibbay2"
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ===== Preloader ===== -->
+<div id="preloader" aria-hidden="true">
+  <div class="loader-ring"></div>
+  <span class="loader-text">HB</span>
+</div>
+
+<!-- ===== Animated Background ===== -->
+<div class="bg-ambient" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow--one"></div>
+  <div class="bg-glow bg-glow--two"></div>
+  <canvas id="ticker-canvas"></canvas>
+</div>
+
+<!-- ===== Header / Nav ===== -->
+<header class="site-header" id="site-header">
+  <nav class="navbar container" aria-label="Primary">
+    <a href="#hero" class="brand">Hasib<span>bay</span></a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#trading" class="nav-link">Trading</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+      <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main-content">
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="container hero__inner">
+    <div class="hero__text reveal" data-reveal="right">
+      <p class="eyebrow">Dhaka, Bangladesh</p>
+      <h1 class="hero__title">
+        I'm <span class="text-gradient">Hasibul Islam</span>
+      </h1>
+      <p class="hero__tagline">
+        <span id="typed-text" class="typed-text"></span><span class="cursor" aria-hidden="true">|</span>
+      </p>
+      <p class="hero__desc">
+        I read markets like I read code — patiently, structurally, and always watching for the next signal.
+        Trading the charts by day, building the web by night.
+      </p>
+
+      <div class="hero__actions">
+        <a href="assets/Hasibbay-CV.pdf" class="btn btn--gradient ripple" download>
+          <span>Download CV</span>
+        </a>
+        <a href="#contact" class="btn btn--outline ripple">
+          <span>Contact Me</span>
+        </a>
+      </div>
+
+      <div class="hero__socials" aria-label="Social links">
+        <a href="https://github.com/Hasibul100" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2.15c-3.16.69-3.83-1.35-3.83-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.57.23 2.73.11 3.02.73.79 1.17 1.8 1.17 3.04 0 4.35-2.65 5.31-5.18 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.2.66.79.55 4.51-1.5 7.77-5.76 7.77-10.78C23.25 5.48 18.27.5 12 .5z"/></svg>
+        </a>
+        <a href="https://bd.linkedin.com/in/hasibbay" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45C23.2 24 24 23.22 24 22.25V1.75C24 .78 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="https://t.me/hasibbay2" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.05 3.06 2.9 10.62c-1.28.52-1.27 1.24-.23 1.56l4.9 1.53 1.9 5.83c.24.66.44.93.9.93.42 0 .62-.19.87-.46l2.1-2.03 4.36 3.22c.8.44 1.38.21 1.58-.74l2.87-13.5c.29-1.18-.44-1.7-1.1-1.4zM8.34 13.9l9.44-5.94c.45-.27.86-.12.52.18l-7.94 7.16-.31 3.32-1.71-4.72z"/></svg>
+        </a>
+        <a href="mailto:hasibbay0.2@gmail.com" class="social-icon" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm18.1 2H3.9l8.1 6.5L20.1 6zM3 7.4V18h18V7.4l-8.4 6.75a1 1 0 0 1-1.2 0L3 7.4z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__visual reveal" data-reveal="left">
+      <div class="avatar-wrap floating">
+        <div class="avatar-ring"></div>
+        <img
+          src="https://cdn.phototourl.com/free/2026-07-20-19814cc3-5f38-45bb-8df4-5736ed679b4d.jpg"
+          alt="Portrait of Hasibbay, Binary and Forex Trader and Web Developer"
+          class="avatar-img"
+          width="420" height="420"
+          fetchpriority="high"
+        >
+        <div class="chip chip--one">📈 Forex</div>
+        <div class="chip chip--two">&lt;/&gt; Dev</div>
+        <div class="chip chip--three">🎓 Student</div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Get To Know Me</p>
+      <h2>About Me</h2>
+    </div>
+
+    <div class="about__grid">
+      <div class="about__text reveal" data-reveal="up">
+        <p>
+          I'm Hasibul Islam, a self-driven trader and developer based in Dhaka, Bangladesh. My world runs on two
+          parallel charts — candlesticks and code — and I've spent years learning to read both with discipline.
+        </p>
+        <p>
+          As a <strong>Binary &amp; Forex Trader</strong>, I study price action, manage risk with strict rules, and
+          treat every trade as a data point rather than a gamble. As a <strong>Web Developer</strong>, I build
+          clean, fast and accessible interfaces using modern front-end tooling. I'm also a full-time
+          <strong> Student</strong>, constantly stacking new skills.
+        </p>
+        <p>
+          Above all, I'm a <strong>Problem Solver</strong> and <strong>Technology Enthusiast</strong> — I enjoy
+          breaking complex systems into simple, repeatable processes, whether that's a trading strategy or a
+          software architecture.
+        </p>
+
+        <ul class="about__tags">
+          <li>Binary Trader</li>
+          <li>Forex Trader</li>
+          <li>Web Developer</li>
+          <li>Student</li>
+          <li>Problem Solver</li>
+          <li>Technology Enthusiast</li>
+        </ul>
+      </div>
+
+      <div class="about__card glass reveal" data-reveal="up">
+        <div class="about__row"><span>Name</span><strong>Hasibbay Islam</strong></div>
+        <div class="about__row"><span>Location</span><strong>Dhaka, Bangladesh</strong></div>
+        <div class="about__row"><span>Email</span><strong>hasibbay0.2@gmail.com</strong></div>
+        <div class="about__row"><span>Focus</span><strong>Trading &amp; Web Dev</strong></div>
+        <div class="about__row"><span>Status</span><strong class="status-dot">Available for work</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section section--alt" id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">What I Work With</p>
+      <h2>Skills &amp; Expertise</h2>
+    </div>
+
+    <div class="skills__grid">
+      <div class="skills__col glass reveal" data-reveal="up">
+        <h3>Development</h3>
+        <div class="skill-bar" data-percent="90">
+          <div class="skill-bar__top"><span>HTML</span><em>90%</em></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+        </div>
+        <div class="skill-bar" data-percent="85">
+          <div class="skill-bar__top"><span>CSS</span><em>85%</em></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+        </div>
+        <div class="skill-bar" data-percent="80">
+          <div class="skill-bar__top"><span>JavaScript</span><em>80%</em></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+        </div>
+        <div class="skill-bar" data-percent="70">
+          <div class="skill-bar__top"><span>React</span><em>70%</em></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+        </div>
+        <div class="skill-bar" data-percent="65">
+          <div class="skill-bar__top"><span>Node.js</span><em>65%</em></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+        </div>
+        <div class="skill-bar" data-percent="80">
+          <div class="skill-bar__top"><span>Git &amp; GitHub</span><em>80%</em></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+        </div>
+        <div class="skill-bar" data-percent="75">
+          <div class="skill-bar__top"><span>REST API</span><em>75%</em></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+        </div>
+      </div>
+
+      <div class="skills__col glass reveal" data-reveal="up">
+        <h3>Trading</h3>
+        <div class="skill-bar" data-percent="85">
+          <div class="skill-bar__top"><span>Forex Trading</span><em>85%</em></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+        </div>
+        <div class="skill-bar" data-percent="80">
+          <div class="skill-bar__top"><span>Binary Trading</span><em>80%</em></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+        </div>
+        <div class="skill-bar" data-percent="88">
+          <div class="skill-bar__top"><span>Technical Analysis</span><em>88%</em></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+        </div>
+        <div class="skill-bar" data-percent="90">
+          <div class="skill-bar__top"><span>Risk Management</span><em>90%</em></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">My Journey</p>
+      <h2>Experience Timeline</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline__item reveal" data-reveal="right">
+        <div class="timeline__dot"></div>
+        <div class="timeline__card glass">
+          <span class="timeline__date">2022 — Present</span>
+          <h3>Forex &amp; Binary Trading</h3>
+          <p>
+            Started live trading with a strict risk-managed approach. Refined entries using support/resistance,
+            price action and multiple indicators while journaling every trade to improve win-rate consistency.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline__item reveal" data-reveal="left">
+        <div class="timeline__dot"></div>
+        <div class="timeline__card glass">
+          <span class="timeline__date">2023 — Present</span>
+          <h3>Web Development</h3>
+          <p>
+            Began building responsive websites with HTML, CSS and JavaScript, then expanded into React and
+            Node.js. Now focused on performance, accessibility and clean UI systems.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline__item reveal" data-reveal="right">
+        <div class="timeline__dot"></div>
+        <div class="timeline__card glass">
+          <span class="timeline__date">Ongoing</span>
+          <h3>Learning Journey</h3>
+          <p>
+            Continuously studying Computer Science fundamentals, algorithmic thinking, and advanced trading
+            psychology through self-paced courses, books and hands-on practice.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section class="section section--alt" id="education">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Background</p>
+      <h2>Education</h2>
+    </div>
+
+    <div class="edu__grid">
+      <div class="edu__card glass reveal" data-reveal="up">
+        <div class="edu__icon">🎓</div>
+        <h3>Student</h3>
+        <p>Currently pursuing my studies while balancing trading and development work alongside academics.</p>
+      </div>
+      <div class="edu__card glass reveal" data-reveal="up">
+        <div class="edu__icon">💻</div>
+        <h3>Computer Science Learner</h3>
+        <p>Studying core CS concepts — data structures, algorithms and web technologies — through structured self-study.</p>
+      </div>
+      <div class="edu__card glass reveal" data-reveal="up">
+        <div class="edu__icon">📚</div>
+        <h3>Self-Learning Programming</h3>
+        <p>Built practical skills through documentation, open-source projects and countless hours of hands-on coding.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Selected Work</p>
+      <h2>Projects</h2>
+    </div>
+
+    <div class="projects__grid">
+
+      <article class="project-card glass reveal" data-reveal="up">
+        <div class="project-card__img">
+          <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Trading+Dashboard" alt="Trading Dashboard project preview" loading="lazy" width="600" height="400">
+        </div>
+        <div class="project-card__body">
+          <h3>Trading Dashboard</h3>
+          <p>A real-time forex dashboard visualizing price movement, indicators and personal trade journal entries.</p>
+          <div class="project-card__actions">
+            <a href="https://github.com/Hasibul100" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--outline">GitHub</a>
+            <a href="#" class="btn btn--sm btn--gradient">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal" data-reveal="up">
+        <div class="project-card__img">
+          <img src="https://placehold.co/600x400/1e293b/06b6d4?text=Portfolio+Website" alt="Portfolio website project preview" loading="lazy" width="600" height="400">
+        </div>
+        <div class="project-card__body">
+          <h3>Premium Portfolio Website</h3>
+          <p>This very site — a dark-themed, animated personal portfolio built with vanilla HTML, CSS and JS.</p>
+          <div class="project-card__actions">
+            <a href="https://github.com/Hasibul100" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--outline">GitHub</a>
+            <a href="#" class="btn btn--sm btn--gradient">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal" data-reveal="up">
+        <div class="project-card__img">
+          <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Trading+Bot" alt="Trading automation bot project preview" loading="lazy" width="600" height="400">
+        </div>
+        <div class="project-card__body">
+          <h3>Automated Trading Bot</h3>
+          <p>A rule-based automation bot that executes trades on predefined technical signals and risk limits.</p>
+          <div class="project-card__actions">
+            <a href="https://github.com/Hasibul100" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--outline">GitHub</a>
+            <a href="#" class="btn btn--sm btn--gradient">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal" data-reveal="up">
+        <div class="project-card__img">
+          <img src="https://placehold.co/600x400/1e293b/06b6d4?text=REST+API+Service" alt="REST API service project preview" loading="lazy" width="600" height="400">
+        </div>
+        <div class="project-card__body">
+          <h3>Market Data API</h3>
+          <p>A lightweight Node.js REST API that aggregates and serves market data to front-end clients.</p>
+          <div class="project-card__actions">
+            <a href="https://github.com/Hasibul100" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--outline">GitHub</a>
+            <a href="#" class="btn btn--sm btn--gradient">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRADING ===== -->
+<section class="section section--alt" id="trading">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Markets &amp; Strategy</p>
+      <h2>Trading Knowledge</h2>
+      <p class="section-sub">The discipline behind every trade I take.</p>
+    </div>
+
+    <div class="trading__grid">
+      <div class="trading__card glass reveal" data-reveal="up">
+        <div class="trading__icon">💱</div>
+        <h3>Forex Trading</h3>
+        <p>Trading currency pairs across global sessions using structured, repeatable strategies.</p>
+      </div>
+      <div class="trading__card glass reveal" data-reveal="up">
+        <div class="trading__icon">⏱️</div>
+        <h3>Binary Trading</h3>
+        <p>Short-duration directional trades executed with tight rules and predefined outcomes.</p>
+      </div>
+      <div class="trading__card glass reveal" data-reveal="up">
+        <div class="trading__icon">🛡️</div>
+        <h3>Risk Management</h3>
+        <p>Position sizing and stop-loss discipline to protect capital on every single trade.</p>
+      </div>
+      <div class="trading__card glass reveal" data-reveal="up">
+        <div class="trading__icon">🧠</div>
+        <h3>Trading Psychology</h3>
+        <p>Staying emotionally neutral — no revenge trading, no FOMO, only the plan.</p>
+      </div>
+      <div class="trading__card glass reveal" data-reveal="up">
+        <div class="trading__icon">📊</div>
+        <h3>Technical Analysis</h3>
+        <p>Reading price structure, trend, and momentum to time entries and exits.</p>
+      </div>
+      <div class="trading__card glass reveal" data-reveal="up">
+        <div class="trading__icon">💰</div>
+        <h3>Money Management</h3>
+        <p>Allocating capital wisely across trades to preserve long-term account growth.</p>
+      </div>
+      <div class="trading__card glass reveal" data-reveal="up">
+        <div class="trading__icon">🧱</div>
+        <h3>Support &amp; Resistance</h3>
+        <p>Mapping key zones where price is likely to react, reverse or break out.</p>
+      </div>
+      <div class="trading__card glass reveal" data-reveal="up">
+        <div class="trading__icon">🕯️</div>
+        <h3>Charts</h3>
+        <p>Reading candlestick patterns and market structure across multiple timeframes.</p>
+      </div>
+      <div class="trading__card glass reveal" data-reveal="up">
+        <div class="trading__icon">📈</div>
+        <h3>Indicators</h3>
+        <p>Using RSI, Moving Averages and MACD as confirmation, never as the sole signal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">How I Can Help</p>
+      <h2>Services</h2>
+    </div>
+
+    <div class="services__grid">
+      <div class="service-card glass reveal" data-reveal="up">
+        <div class="service-card__icon">🌐</div>
+        <h3>Web Development</h3>
+        <p>Responsive, fast, SEO-friendly websites and web apps built with modern best practices.</p>
+      </div>
+      <div class="service-card glass reveal" data-reveal="up">
+        <div class="service-card__icon">📞</div>
+        <h3>Trading Consultation</h3>
+        <p>One-on-one guidance on strategy building, risk management and trading psychology.</p>
+      </div>
+      <div class="service-card glass reveal" data-reveal="up">
+        <div class="service-card__icon">⚙️</div>
+        <h3>Automation</h3>
+        <p>Custom scripts and workflows that automate repetitive trading and development tasks.</p>
+      </div>
+      <div class="service-card glass reveal" data-reveal="up">
+        <div class="service-card__icon">🤖</div>
+        <h3>Bot Development</h3>
+        <p>Rule-based trading bots and Telegram bots tailored to your exact requirements.</p>
+      </div>
+      <div class="service-card glass reveal" data-reveal="up">
+        <div class="service-card__icon">🔗</div>
+        <h3>API Integration</h3>
+        <p>Connecting your product to third-party market data, payment or automation APIs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATISTICS ===== -->
+<section class="section stats" id="stats">
+  <div class="container">
+    <div class="stats__grid">
+      <div class="stat reveal" data-reveal="up">
+        <span class="stat__num" data-count="40">0</span><span class="stat__plus">+</span>
+        <p>Projects</p>
+      </div>
+      <div class="stat reveal" data-reveal="up">
+        <span class="stat__num" data-count="3">0</span><span class="stat__plus">+</span>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat reveal" data-reveal="up">
+        <span class="stat__num" data-count="12">0</span><span class="stat__plus">+</span>
+        <p>Skills</p>
+      </div>
+      <div class="stat reveal" data-reveal="up">
+        <span class="stat__num" data-count="3000">0</span><span class="stat__plus">+</span>
+        <p>Learning Hours</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section section--alt" id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Kind Words</p>
+      <h2>Testimonials</h2>
+    </div>
+
+    <div class="testimonials__grid">
+      <div class="testimonial-card glass reveal" data-reveal="up">
+        <p class="testimonial-card__quote">"Hasibul rebuilt our landing page and it loads instantly. Communication was clear from start to finish."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">RA</div>
+          <div>
+            <strong>Rafiq Ahmed</strong>
+            <span>Startup Founder</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card glass reveal" data-reveal="up">
+        <p class="testimonial-card__quote">"His risk management framework changed how I approach every single trade. Genuinely disciplined mentor."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">SN</div>
+          <div>
+            <strong>Sadia Noor</strong>
+            <span>Forex Trader</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card glass reveal" data-reveal="up">
+        <p class="testimonial-card__quote">"Delivered our automation bot ahead of schedule and it's been running flawlessly since launch."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">TI</div>
+          <div>
+            <strong>Tanvir Islam</strong>
+            <span>Product Manager</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Let's Talk</p>
+      <h2>Contact Me</h2>
+      <p class="section-sub">Have a project, a question or a trading idea? Send it over.</p>
+    </div>
+
+    <div class="contact__grid">
+      <form class="contact-form glass reveal" data-reveal="up" id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--gradient ripple full-width">
+          <span>Send Message</span>
+        </button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact__side reveal" data-reveal="up">
+        <div class="contact__info glass">
+          <div class="contact__row">
+            <span class="contact__icon">📍</span>
+            <div><strong>Location</strong><p>Dhaka, Bangladesh</p></div>
+          </div>
+          <div class="contact__row">
+            <span class="contact__icon">✉️</span>
+            <div><strong>Email</strong><p>hasibbay0.2@gmail.com</p></div>
+          </div>
+          <div class="contact__row">
+            <span class="contact__icon">💬</span>
+            <div><strong>Telegram</strong><p>@hasibbay2</p></div>
+          </div>
+        </div>
+
+        <div class="map-placeholder glass" role="img" aria-label="Map showing Dhaka, Bangladesh location">
+          <iframe
+            title="Dhaka, Bangladesh Map"
+            src="https://www.google.com/maps?q=Dhaka,Bangladesh&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <a href="#hero" class="brand">Hasib<span>bay</span></a>
+    <p class="footer__copy">&copy; <span id="year"></span> Hasibul. All rights reserved.</p>
+    <div class="footer__socials" aria-label="Social links">
+      <a href="https://github.com/Hasibul100" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2.15c-3.16.69-3.83-1.35-3.83-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.57.23 2.73.11 3.02.73.79 1.17 1.8 1.17 3.04 0 4.35-2.65 5.31-5.18 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.2.66.79.55 4.51-1.5 7.77-5.76 7.77-10.78C23.25 5.48 18.27.5 12 .5z"/></svg>
+      </a>
+      <a href="https://bd.linkedin.com/in/hasibbay" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45C23.2 24 24 23.22 24 22.25V1.75C24 .78 23.2 0 22.22 0z"/></svg>
+      </a>
+      <a href="https://t.me/hasibbay2" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.05 3.06 2.9 10.62c-1.28.52-1.27 1.24-.23 1.56l4.9 1.53 1.9 5.83c.24.66.44.93.9.93.42 0 .62-.19.87-.46l2.1-2.03 4.36 3.22c.8.44 1.38.21 1.58-.74l2.87-13.5c.29-1.18-.44-1.7-1.1-1.4zM8.34 13.9l9.44-5.94c.45-.27.86-.12.52.18l-7.94 7.16-.31 3.32-1.71-4.72z"/></svg>
+      </a>
+      <a href="mailto:hasibbay0.2@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm18.1 2H3.9l8.1 6.5L20.1 6zM3 7.4V18h18V7.4l-8.4 6.75a1 1 0 0 1-1.2 0L3 7.4z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js" defer></script>
+</body>
+</html>

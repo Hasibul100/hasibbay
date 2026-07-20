@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hasibbay.dev/sitemap.xml
+Sitemap: https://hasibul100.github.io/hasibbay/sitemap.xml
